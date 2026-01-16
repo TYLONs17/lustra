@@ -28,15 +28,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="scroll-smooth">
-      {/* 1. We apply the font variables 
-          2. We set 'font-sans' (Inter) as the default for the whole body 
-      */}
-      <body className={`${playfair.variable} ${inter.variable} font-sans antialiased`}>
+    <html lang="en" className="dark scroll-smooth">
+      <body
+        className={`${playfair.variable} ${inter.variable} font-sans antialiased`}
+      >
         <Providers>
-          <Navbar />
-          <main>{children}</main>
-          <Footer />
+          {/* Vite #root replacement */}
+          <div className="app-shell">
+            <Navbar />
+            <main>{children}</main>
+            <Footer />
+          </div>
+
+          {/* Global floating UI */}
           <WhatsAppButton />
         </Providers>
       </body>

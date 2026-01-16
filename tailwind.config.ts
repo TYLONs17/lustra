@@ -6,8 +6,8 @@ const config: Config = {
   darkMode: ["class", ".dark"],
 
   content: [
-    "./app/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}",
+    // "./app/**/*.{js,t`s,jsx,tsx}",
+    // "./components/**/*.{js,ts,jsx,tsx}",`
     "./src/app/**/*.{js,ts,jsx,tsx}",
     "./src/components/**/*.{js,ts,jsx,tsx}",
   ],
@@ -87,43 +87,43 @@ const config: Config = {
   plugins: [
     animate,
 
-    plugin(function ({ addComponents, theme }) {
-      addComponents({
-        ".container-custom": {
-          maxWidth: "80rem", // 7xl
-          marginLeft: "auto",
-          marginRight: "auto",
-          paddingLeft: theme("spacing.4"),
-          paddingRight: theme("spacing.4"),
+    // plugin(function ({ addComponents, theme }) {
+    //   addComponents({
+    //     ".container-custom": {
+    //       maxWidth: "80rem", // 7xl
+    //       marginLeft: "auto",
+    //       marginRight: "auto",
+    //       paddingLeft: theme("spacing.4"),
+    //       paddingRight: theme("spacing.4"),
 
-          "@screen md": {
-            paddingLeft: theme("spacing.8"),
-            paddingRight: theme("spacing.8"),
-          },
-        },
+    //       "@screen md": {
+    //         paddingLeft: theme("spacing.8"),
+    //         paddingRight: theme("spacing.8"),
+    //       },
+    //     },
 
-        ".section-padding": {
-          paddingLeft: theme("spacing.4"),
-          paddingRight: theme("spacing.4"),
-          paddingTop: theme("spacing.16"),
-          paddingBottom: theme("spacing.16"),
+    //     ".section-padding": {
+    //       paddingLeft: theme("spacing.4"),
+    //       paddingRight: theme("spacing.4"),
+    //       paddingTop: theme("spacing.16"),
+    //       paddingBottom: theme("spacing.16"),
 
-          "@screen md": {
-            paddingLeft: theme("spacing.8"),
-            paddingRight: theme("spacing.8"),
-            paddingTop: theme("spacing.24"),
-            paddingBottom: theme("spacing.24"),
-          },
+    //       "@screen md": {
+    //         paddingLeft: theme("spacing.8"),
+    //         paddingRight: theme("spacing.8"),
+    //         paddingTop: theme("spacing.24"),
+    //         paddingBottom: theme("spacing.24"),
+    //       },
 
-          "@screen lg": {
-            paddingLeft: theme("spacing.16"),
-            paddingRight: theme("spacing.16"),
-            paddingTop: theme("spacing.32"),
-            paddingBottom: theme("spacing.32"),
-          },
-        },
-      });
-    }),
+    //       "@screen lg": {
+    //         paddingLeft: theme("spacing.16"),
+    //         paddingRight: theme("spacing.16"),
+    //         paddingTop: theme("spacing.32"),
+    //         paddingBottom: theme("spacing.32"),
+    //       },
+    //     },
+    //   });
+    // }),
   ],
 };
 

@@ -1,6 +1,11 @@
+@import "tailwindcss";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
 
 /* =========================
    Base theme variables
@@ -141,6 +146,15 @@
   .animate-arrow-float {
     animation: arrow-float 1.5s ease-in-out infinite;
   }
+
+
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 md:px-8;
+  }
+
+  .section-padding {
+    @apply px-4 py-16 md:px-8 md:py-24 lg:px-16 lg:py-32;
+  }
 }
 
 /* =========================
@@ -185,3 +199,4 @@
     animation: logo-spin infinite 20s linear;
   }
 }
+
