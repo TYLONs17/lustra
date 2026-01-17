@@ -66,7 +66,7 @@ export default function Footer() {
                   href="tel:+27000000000"
                   className="text-sm text-muted-foreground hover:text-gold transition-colors"
                 >
-                  +27 (0) 00 000 0000
+                  +27 (0) 68 065 2679
                 </a>
               </li>
               <li className="flex items-start gap-3">
