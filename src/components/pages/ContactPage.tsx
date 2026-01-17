@@ -8,8 +8,8 @@ import { Phone, Mail, MapPin, MessageCircle, Clock, Send } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
 const contactInfo = [
-  { icon: Phone, label: "Phone", value: "+27 (0) 00 000 0000", href: "tel:+27000000000" },
-  { icon: MessageCircle, label: "WhatsApp", value: "Chat with us", href: "https://wa.me/27000000000" },
+  { icon: Phone, label: "Phone", value: "+27 (0) 68 065 2679", href: "tel:+27680652679" },
+  { icon: MessageCircle, label: "WhatsApp", value: "Chat with us", href: "https://wa.me/27680652679" },
   { icon: Mail, label: "Email", value: "info@lustrafloors.co.za", href: "mailto:info@lustrafloors.co.za" },
   { icon: MapPin, label: "Service Area", value: "Nationwide, South Africa", href: null },
   { icon: Clock, label: "Working Hours", value: "Mon - Fri: 8am - 5pm", href: null },
@@ -110,7 +110,7 @@ export default function ContactPage() {
                   Get instant responses via WhatsApp. We&apos;re quick to reply!
                 </p>
                 <Button variant="whatsapp" className="w-full" asChild>
-                  <a href="https://wa.me/27000000000" target="_blank" rel="noopener noreferrer">
+                  <a href="https://wa.me/27680652679" target="_blank" rel="noopener noreferrer">
                     <MessageCircle className="w-5 h-5 mr-2" />
                     Chat on WhatsApp
                   </a>

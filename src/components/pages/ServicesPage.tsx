@@ -230,7 +230,7 @@ export default function ServicesPage() {
               <Link href="/contact">Request Custom Quote</Link>
             </Button>
             <Button variant="heroOutline" size="xl" asChild>
-              <a href="tel:+27000000000">Call Us Now</a>
+              <a href="tel:+27680652679">Call Us Now</a>
             </Button>
           </div>
         </div>

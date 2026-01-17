@@ -1,12 +1,7 @@
 import Link from "next/link";
 import { Phone, Mail, MapPin } from "lucide-react";
 
-const QUICK_LINKS = ["Home", "Services", "About", "Gallery", "Contact"] as const;
-const SERVICES = ["Marble-Look Floors", "Epoxy & Resin Floors", "Air-Spray Coatings", "Roof Waterproofing"] as const;
-
-export default function Footer() {
-  const currentYear = new Date().getFullYear();
-
+export function Footer() {
   return (
     <footer className="bg-charcoal-dark text-primary-foreground">
       <div className="container-custom py-16">
@@ -14,8 +9,12 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-1">
             <Link href="/" className="inline-block mb-4">
-              <span className="text-2xl font-display font-bold tracking-wide">LUSTRA</span>
-              <span className="block text-xs text-gold tracking-[0.2em] uppercase">Floors & Coatings</span>
+              <span className="text-2xl font-display font-bold tracking-wide">
+                LUSTRA
+              </span>
+              <span className="block text-xs text-gold tracking-[0.2em] uppercase">
+                Floors & Coatings
+              </span>
             </Link>
             <p className="text-sm text-muted-foreground leading-relaxed">
               Premium surface finishing solutions for homes and businesses across South Africa.
@@ -24,9 +23,11 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-sm font-semibold uppercase tracking-wider text-gold mb-4">Quick Links</h4>
+            <h4 className="text-sm font-semibold uppercase tracking-wider text-gold mb-4">
+              Quick Links
+            </h4>
             <ul className="space-y-3">
-              {QUICK_LINKS.map((link) => (
+              {["Home", "Services", "About", "Gallery", "Contact"].map((link) => (
                 <li key={link}>
                   <Link
                     href={link === "Home" ? "/" : `/${link.toLowerCase()}`}
@@ -41,9 +42,16 @@ export default function Footer() {
 
           {/* Services */}
           <div>
-            <h4 className="text-sm font-semibold uppercase tracking-wider text-gold mb-4">Our Services</h4>
+            <h4 className="text-sm font-semibold uppercase tracking-wider text-gold mb-4">
+              Our Services
+            </h4>
             <ul className="space-y-3">
-              {SERVICES.map((service) => (
+              {[
+                "Marble-Look Floors",
+                "Epoxy & Resin Floors",
+                "Air-Spray Coatings",
+                "Roof Waterproofing",
+              ].map((service) => (
                 <li key={service}>
                   <Link
                     href="/services"
@@ -58,12 +66,14 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h4 className="text-sm font-semibold uppercase tracking-wider text-gold mb-4">Contact Us</h4>
+            <h4 className="text-sm font-semibold uppercase tracking-wider text-gold mb-4">
+              Contact Us
+            </h4>
             <ul className="space-y-3">
               <li className="flex items-start gap-3">
                 <Phone className="w-4 h-4 text-gold mt-0.5 shrink-0" />
                 <a
-                  href="tel:+27000000000"
+                  href="tel:+27680652679"
                   className="text-sm text-muted-foreground hover:text-gold transition-colors"
                 >
                   +27 (0) 68 065 2679
@@ -80,7 +90,9 @@ export default function Footer() {
               </li>
               <li className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 text-gold mt-0.5 shrink-0" />
-                <span className="text-sm text-muted-foreground">Nationwide Service, South Africa</span>
+                <span className="text-sm text-muted-foreground">
+                  Nationwide Service, South Africa
+                </span>
               </li>
             </ul>
           </div>
@@ -90,7 +102,7 @@ export default function Footer() {
         <div className="mt-12 pt-8 border-t border-border/20">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-xs text-muted-foreground">
-              © {currentYear} Lustra Floors & Coatings (Pty) Ltd. All rights reserved.
+              © 2025-{new Date().getFullYear()} Lustra Floors & Coatings (Pty) Ltd. All rights reserved.
             </p>
             <p className="text-xs text-muted-foreground">
               Premium Floors. Flawless Coatings. Lasting Protection.

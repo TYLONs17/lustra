@@ -135,7 +135,7 @@ export default function GalleryPage() {
               <Link href="/contact">Get Your Free Quote</Link>
             </Button>
             <Button variant="heroOutline" size="xl" asChild>
-              <a href="https://wa.me/27000000000" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/27680652679" target="_blank" rel="noopener noreferrer">
                 WhatsApp Us
               </a>
             </Button>

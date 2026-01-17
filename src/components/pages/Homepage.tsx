@@ -90,7 +90,8 @@ export default function HomePage() {
         </div>
 
         {/* Scroll Indicator */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-float">
+        <div 
+          className="absolute bottom-8 inset-x-0 flex justify-center left-1/2 -translate-x-1/2 animate-float">
           <ChevronDown className="w-8 h-8 text-gold" />
         </div>
       </section>
@@ -206,7 +207,7 @@ export default function HomePage() {
               <Link href="/contact">Get Your Free Quote</Link>
             </Button>
             <Button variant="heroOutline" size="xl" asChild>
-              <a href="https://wa.me/27000000000" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/27680652679" target="_blank" rel="noopener noreferrer">
                 WhatsApp Us
               </a>
             </Button>

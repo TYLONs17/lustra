@@ -1,8 +1,8 @@
 import "./globals.css";
 import { Playfair_Display, Inter } from "next/font/google";
 import { Providers } from "./providers";
-import Navbar from "@/components/navbar/Navbar";
-import Footer from "@/components/footer/Footer";
+import { Navbar } from "@/components/Navbar";
+import { Footer } from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 
 // Luxury Heading Font
@@ -28,7 +28,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="dark scroll-smooth">
+    <html lang="en" className="scroll-smooth">
       <body
         className={`${playfair.variable} ${inter.variable} font-sans antialiased`}
       >
