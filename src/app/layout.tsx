@@ -43,22 +43,22 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
         />
-        <body
-          className={`${playfair.variable} ${inter.variable} font-sans antialiased`}
-        >
-          <Providers>
-            {/* Vite #root replacement */}
-            <div className="app-shell">
-              <Navbar />
-              <main>{children}</main>
-              <Footer />
-            </div>
-
-            {/* Global floating UI */}
-            <WhatsAppButton />
-          </Providers>
-        </body>
       </head>
+      <body
+        className={`${playfair.variable} ${inter.variable} font-sans antialiased`}
+      >
+        <Providers>
+          {/* Vite #root replacement */}
+          <div className="app-shell">
+            <Navbar />
+            <main>{children}</main>
+            <Footer />
+          </div>
+
+          {/* Global floating UI */}
+          <WhatsAppButton />
+        </Providers>
+      </body>
     </html>
   );
 }
