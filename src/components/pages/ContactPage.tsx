@@ -138,6 +138,13 @@ export default function ContactPage() {
                         placeholder="John Smith"
                         maxLength={100}
                       />
+                      <input
+                        type="text"
+                        name="website"
+                        tabIndex={-1}
+                        autoComplete="off"
+                        className="hidden"
+                      />
                     </div>
                     <div>
                       <label className="block text-sm font-medium text-foreground mb-2">

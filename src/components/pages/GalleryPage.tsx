@@ -7,16 +7,19 @@ import { Button } from "@/components/ui/button";
 import { SectionHeading } from "@/components/SectionHeading";
 
 import heroFloor from "@/assets/hero-floor.jpg";
+import heroFLoorBefore from "@/assets/Hero-floor BEFORE.jpeg";
+import metalicEpoxyFloor from "@/assets/metallic-epoxy-floor.jpg";
 import sprayWalls from "@/assets/spray-walls.jpg";
 import roofCoating from "@/assets/roof-coating.jpg";
+import ExceutiveOffice from "@/assets/executive floor epoxy.png"
 import epoxyFloor from "@/assets/epoxy-floor.jpg";
 
 const projects = [
   { title: "Modern Living Room", category: "Marble-Look Floor", image: heroFloor },
-  { title: "Luxury Retail Space", category: "Metallic Epoxy Floor", image: epoxyFloor },
+  { title: "Luxury Retail Space", category: "Metallic Epoxy Floor", image: metalicEpoxyFloor },
   { title: "Commercial Interior", category: "Air-Spray Walls", image: sprayWalls },
   { title: "Industrial Rooftop", category: "Waterproof Coating", image: roofCoating },
-  { title: "Executive Office", category: "Marble-Look Floor", image: heroFloor },
+  { title: "Executive Office", category: "Marble-Look Floor", image: ExceutiveOffice },
   { title: "Showroom Floor", category: "Metallic Epoxy Floor", image: epoxyFloor },
 ];
 
@@ -111,7 +114,8 @@ export default function GalleryPage() {
             </div>
             <div className="relative aspect-video overflow-hidden rounded-lg shadow-elevated bg-charcoal/20">
               <div className="absolute inset-0 flex items-center justify-center">
-                <p className="text-muted-foreground text-sm">Before image placeholder</p>
+                <Image src={heroFLoorBefore} alt="Before transformation" fill className="object-cover" />
+                {/* <p className="text-muted-foreground text-sm">Before image placeholder</p> */}
               </div>
               <div className="absolute top-4 left-4 bg-charcoal text-primary-foreground px-3 py-1 rounded-full text-sm font-semibold">
                 Before

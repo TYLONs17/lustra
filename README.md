@@ -1,36 +1,92 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Lustra Floors & Coatings – Business Website
 
-## Getting Started
+A modern, responsive business website built for **Lustra Floors & Coatings**, a South African company specializing in premium epoxy flooring, marble-look floors, wall coatings, and rooftop waterproofing solutions.
 
-First, run the development server:
+The site focuses on a **luxury visual identity**, strong call-to-actions, and smooth UI micro-interactions to reflect the brand’s craftsmanship and professionalism.
 
-```bash
+---
+
+## ✨ Features
+
+- Modern **Next.js App Router** architecture
+- Fully responsive, mobile-first design
+- Custom **luxury brand theme** (gold & charcoal palette)
+- Dark / Light mode support
+- Animated hero section and UI micro-interactions
+- Optimized images using `next/image`
+- SEO-friendly structure and metadata
+- Reusable, scalable component architecture
+
+---
+
+## 🛠 Tech Stack
+
+- **Framework:** Next.js (App Router)
+- **Styling:** Tailwind CSS v4 (CSS variables + `@theme`)
+- **UI & Icons:** shadcn/ui, Lucide Icons
+- **Fonts:** Google Fonts via `next/font`
+- **Theme Management:** `next-themes`
+- **Animations:** Tailwind utilities + CSS keyframes
+
+---
+
+## 📁 Project Structure (Simplified)
+    src/
+    ├─ app/ # App Router pages & layouts
+    ├─ assets/ # Images and static assets
+    ├─ components/ # UI & layout components
+    ├─ hooks/ 
+    ├─ lib/ # Utilities and helpers
+    └─ types/ 
+
+    
+---
+
+## 🚀 Getting Started (Local Development)
+
+1. Install dependencies:
+
+npm install
+# or
+yarn install
+# or
+pnpm install
+
+2. Start the development server:
+
 npm run dev
 # or
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Open your browser and navigate to:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+http://localhost:3000
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+The site will hot-reload as you edit files.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## 📄 License & Usage
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Project built for **Lustra Floors & Coatings**.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Design, branding, and content are client-specific
+- Code structure may be reused for learning or portfolio purposes
+- Commercial reuse of branding requires permission 
+
+
+## 👨‍💻 Author
+
+**github.com/TYLONs17 - github.com/JALES25**
+ Developer | Networking Engineer | CyberSecurity enthusiast
+
+
+Website hosted on Vercel and domain owned the client. 
+Hosting can be transferred at any time.
+
+🌐 Live site: https://lustrafloorsandcoating.co.za
+
