@@ -30,22 +30,34 @@ export function Navbar() {
           {/* Logo */}
           <Link
             href="/"
-            className="group flex flex-col items-center justify-center relative transition-transform duration-300 hover:scale-[1.03]"
+            className="group relative flex flex-col items-center justify-center transition-transform duration-300 hover:scale-[1.03]"
           >
-            <span className="racking-wide text-center w-28 h-32 relative block">
-              <Image src={trasparentLogo} alt="Lustra floors and coatings" fill className="object-cover" />
-            </span>
-            
-            {/* <span className="text-lg md:text-xl font-display font-bold text-primary-foreground tracking-wide text-center">
-              LUSTRA
-            </span>
+            <span className="relative w-28 h-32 block">
+              {/* Golden glow */}
+              <span
+                className="
+                  pointer-events-none
+                  absolute inset-0
+                  rounded-full
+                  opacity-0
+                  blur-xl
+                  transition-opacity duration-300
+                  group-hover:opacity-20
+                  bg-[radial-gradient(circle_at_center,rgba(212,175,55,0.55),transparent_70%)]
+                "
+              />
 
-            <span className="text-[10px] md:text-xs text-gold tracking-[0.2em] uppercase -mt-1 text-center">
-              Floors & Coatings
-            </span> */}
-
-            <span className="absolute left-1/2 -bottom-1 h-[2px] w-0 bg-gradient-gold transition-all duration-300 -translate-x-1/2 group-hover:w-full" />
+              {/* Logo image */}
+              <Image
+                src={trasparentLogo}
+                alt="Lustra floors and coatings"
+                fill
+                className="relative object-contain"
+                priority
+              />
+            </span>
           </Link>
+
 
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center gap-8">
