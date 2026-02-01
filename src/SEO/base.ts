@@ -3,6 +3,10 @@ import type { Metadata } from "next";
 export const baseMetadata: Metadata = { 
   metadataBase: new URL("https://lustrafloorsandcoatings.co.za"),
 
+  verification: {
+    google: 'your-unique-code-here',
+  },
+
   title: {
     default: "Lustra Floors & Coatings | Premium Epoxy & Marble-Look Floors",
     template: "%s | Lustra Floors & Coatings",
@@ -27,6 +31,8 @@ export const baseMetadata: Metadata = {
     "durable flooring options",
     "custom epoxy designs",
     "flooring South Africa",
+    "flooring solutions",
+    "flooring durban",
     "waterproof roof coatings",
     
     "epoxy flooring South Africa",
